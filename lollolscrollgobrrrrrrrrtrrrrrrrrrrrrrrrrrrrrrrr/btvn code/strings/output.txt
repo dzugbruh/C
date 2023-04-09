@@ -1,0 +1,2 @@
+this is the number character s in string 1:0
+this is the number character s in string 2:0
