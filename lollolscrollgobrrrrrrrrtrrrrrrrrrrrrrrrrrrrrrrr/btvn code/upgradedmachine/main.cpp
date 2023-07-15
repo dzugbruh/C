@@ -4,19 +4,27 @@ using namespace std;
 
 int main()
 {
-    int a[100]={true};
+
+    bool a[105];
     for(int i=2;i<100;i++)
     {
-        if(a[i]==true)
+        a[i]=true;
+    }
+        for(int i=2;i<100;i++)
+    {
+        if (a[i]==true)
         {
-            cout<<i<<"la so nguyen to"<<endl;
-            a[i*2]=false;
-            break;
+            cout<<i<<" la so nguyen to"<<endl;
+            for (int j=2;j<100;j++)
+        {
+           if (i*j>100) break;
+           a[i*j]=false;
         }
-        else if(a[i]==false)
+        }
+        else
         {
             cout<<i<<" ko la so nguyen to"<<endl;
         }
-        a[i]=true;
     }
+    return 0;
 }
